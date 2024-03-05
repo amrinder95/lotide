@@ -13,12 +13,13 @@ const tail = function(array) {
   }
   return newArr;
 };
-
-const result = tail(["Hello", "Lighthouse", "Labs"]);
+const words = ["Hello", "Lighthouse", "Labs"];
+const originalLength = words.length;
+const result = tail(words);
 assertEqual(result[0], "Lighthouse");
 assertEqual(result[1], "Labs");
 
-assertEqual(result.length, 2);
+assertEqual(originalLength, words.length);
 
 const empty = [];
 assertEqual(tail(empty).length, 0);
