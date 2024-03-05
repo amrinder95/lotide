@@ -18,12 +18,10 @@ const result = tail(["Hello", "Lighthouse", "Labs"]);
 assertEqual(result[0], "Lighthouse");
 assertEqual(result[1], "Labs");
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); 
+assertEqual(result.length, 2);
 
 const empty = [];
-console.log(tail(empty));
+assertEqual(tail(empty).length, 0);
 
 const oneword = ["Hello"];
-console.log(tail(oneword));
+assertEqual(tail(oneword).length, 0);
