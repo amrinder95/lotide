@@ -19,23 +19,18 @@ const assertArraysEqual =  function(arrayOne, arrayTwo) {
 };
 
 const middle = function(array) {
-  let oddIndex = 0;
-  let evenIndex1 = 0;
-  let evenIndex2 = 0;
   let newArray = [];
   if (array.length > 2) {
     if (array.length % 2 === 0) {
-      evenIndex2 = array.length / 2
-      evenIndex1 = evenIndex2 - 1
+      let evenIndex2 = array.length / 2
+      let evenIndex1 = evenIndex2 - 1
       newArray.push(array[evenIndex1], array[evenIndex2]) 
     } if (array.length % 2 === 1) {
-      oddIndex = Math.floor(array.length / 2)
+      let oddIndex = Math.floor(array.length / 2)
       newArray.push(array[oddIndex])
     }
-    return newArray;
-  } else {
-    return newArray;
   }
+  return newArray;
 }
 
 assertArraysEqual((middle([1])), []);
