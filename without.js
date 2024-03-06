@@ -19,17 +19,14 @@ const assertArraysEqual =  function(arrayOne, arrayTwo) {
 };
 
 const without = function(source, itemsToRemove) {
-  newArray = [];
-  for (let element of source) {
-    newArray.push(element);
-    for (let item of itemsToRemove) {
-     if (element === item) {
-      const index = newArray.indexOf(element);
-      newArray.splice(index, 1);
-     }
+  let newArray = [];
+  for (let i = 0; i < source.length; i++) {
+    if(source[i] !== itemsToRemove[i]){
+      newArray.push(source[i]);
     }
   } return newArray;
 }
+
 
 
 assertArraysEqual(without([1, 2, 3], [1]),[2, 3]);
