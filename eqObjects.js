@@ -28,10 +28,7 @@ const eqObjects = function(object1, object2) {
       if (Array.isArray(object1[key1]) && Array.isArray(object2[key1])){
         if (eqArrays(object1[key1], object2[key1]) === false) {
           return false;
-        }  return true;
-      } 
-      if (object1[key1] !== object2[key1]) {
-        return false;
+        }
       } 
     } return true;
   } else {
