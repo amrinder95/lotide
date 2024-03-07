@@ -19,3 +19,13 @@ const countLetters = function (sentence) {
   }
   return result;
 }
+
+
+
+const result2 = countLetters('lighthouse in the house')
+assertEqual(result2["l"], 1)
+assertEqual(result2["t"], 2)
+
+const result3 = countLetters("hello world")
+assertEqual(result3["l"], 3)
+assertEqual(result3["h"], 1)
