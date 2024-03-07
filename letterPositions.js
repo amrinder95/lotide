@@ -20,14 +20,14 @@ const assertArraysEqual =  function(arrayOne, arrayTwo) {
 
 const letterPositions = function(sentence) {
   const results = {};
-  for(let letter of sentence) {
-    results[letter] = [];
-  }
   for(let i = 0; i < sentence.length; i++) {
-   
+    if (!results[sentence[i]]) {
+      results[sentence[i]] = [];
+    } results[sentence[i]].push(i);
   }
   console.log(results);
   return results;
 };
 
 letterPositions("hello");
+letterPositions("amrinder");
