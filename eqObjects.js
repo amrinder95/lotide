@@ -30,8 +30,8 @@ const eqObjects = function(object1, object2) {
       }
       if (object1[key1] !== object2[key1]) {
         return false;
-      } return true;
-    }
+      } 
+    } return true;
   } else {
     return false;
   }
