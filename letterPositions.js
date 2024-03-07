@@ -21,13 +21,16 @@ const assertArraysEqual =  function(arrayOne, arrayTwo) {
 const letterPositions = function(sentence) {
   const results = {};
   for(let i = 0; i < sentence.length; i++) {
-    if (!results[sentence[i]]) {
-      results[sentence[i]] = [];
-    } results[sentence[i]].push(i);
+    if (sentence[i] !== " "){
+      if (!results[sentence[i]]) {
+        results[sentence[i]] = [];
+      } results[sentence[i]].push(i);
+    }
   }
   console.log(results);
   return results;
 };
 
-letterPositions("hello");
-letterPositions("amrinder");
+assertArraysEqual(letterPositions("hello").l, [2,3]);
+assertArraysEqual(letterPositions("welcome").w, [0]);
+assertArraysEqual(letterPositions("beautiful").u, [3,7]);
