@@ -19,7 +19,3 @@ const countLetters = function (sentence) {
   }
   return result;
 }
-
-
-console.log(countLetters("aaa"));
-assertEqual(countLetters("aaa"), { a: 3 });
