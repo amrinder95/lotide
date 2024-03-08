@@ -12,7 +12,7 @@ const findKey = function(object, callback) {
       return key;
     }
   }
-}
+};
 
 const results1 = findKey({
   "Blue Hill": { stars: 1 },
@@ -41,6 +41,6 @@ const results3 = findKey({
   "Meat Lovers": { toppings: 3 }
 }, x => x.toppings === 1) // => "Cheese"
 
-assertEqual(results1, "noma")
-assertEqual(results2, "Harry")
-assertEqual(results3, "Cheese")
+assertEqual(results1, "noma");
+assertEqual(results2, "Harry");
+assertEqual(results3, "Cheese");
