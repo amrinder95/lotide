@@ -26,9 +26,15 @@ const map = function(array, callback) {
   return results;
 };
 
-
-
 const words = ["ground", "control", "to", "major", "tom"];
-
 const results1 = map(words, word => word[0]);
-console.log(results1);
+
+const days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
+const results2 = map(days, day => day[0]);
+
+const empty = [];
+const results3 = map(empty, empt => empt[0]);
+
+assertArraysEqual(results1, ["g", "c", "t", "m", "t"]);
+assertArraysEqual(results2, ["m", "t", "w", "t", "f", "s", "s"]);
+assertArraysEqual(results3, []);
