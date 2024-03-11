@@ -14,3 +14,5 @@ assertEqual(tail(empty).length, 0);
 
 const oneword = ["Hello"];
 assertEqual(tail(oneword).length, 0);
+
+assertEqual(result.length, words.length - 1);
