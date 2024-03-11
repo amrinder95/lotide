@@ -19,7 +19,7 @@ const eqArrays = function(array1, array2) {
 };
 
 const flatten = function(array) {
-  newArray = [];
+  let newArray = [];
   array.forEach((item) => {
     if (Array.isArray(item)) {
       item.forEach((element) => {
@@ -31,3 +31,7 @@ const flatten = function(array) {
     })
     return newArray
   }
+
+  console.log(flatten([1, 2, [3 ,4], 5]));
+  console.log(flatten([1, 2, [3 ,4], 5 ,[6]]));
+  console.log(flatten([1, 2, [3 ,4], 5, 6, [7, 8]]));
