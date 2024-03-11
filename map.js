@@ -38,3 +38,5 @@ const results3 = map(empty, empt => empt[0]);
 assertArraysEqual(results1, ["g", "c", "t", "m", "t"]);
 assertArraysEqual(results2, ["m", "t", "w", "t", "f", "s", "s"]);
 assertArraysEqual(results3, []);
+
+module.exports = map;

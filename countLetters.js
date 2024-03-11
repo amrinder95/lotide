@@ -31,3 +31,5 @@ assertEqual(result2["t"], 2)
 const result3 = countLetters("hello world")
 assertEqual(result3["l"], 3)
 assertEqual(result3["h"], 1)
+
+module.exports = countLetters;
